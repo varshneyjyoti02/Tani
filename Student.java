@@ -1,31 +1,38 @@
-import java.util.Scanner;
-public class Student {
-	public static void main(String[] args)
-	{
-	Scanner sc=new Scanner(System.in);
-	System.out.println("Enter your marks");
-	int marks=sc.nextInt();
-	if(marks<50)
-	{
-		System.out.println("Fail");
-	}
-	
-	else if(marks>=50&&marks<=60)
-	{
-		System.out.println("Pass");
-		
-	}
-	else if(marks>60&&marks<=75)
-	{
-		System.out.println("First");
-		
-	}
-	else if(marks>75)
-	{
-		System.out.println("Distinction");
-		
-	}
-	
-}
+package capgeminiTani;
 
+public class Student {
+
+	
+		
+		private int rollno;
+		private String name;
+		private String[] course;
+		
+		public String[] getCourse() {
+			return course;
+		}
+
+		public void setCourse(String[] course) {
+			this.course = course;
+		}
+
+		public int getRollNo()
+		{
+			return rollno;
+		}
+		
+		public void setRollNo(int rollno)
+		{		
+			this.rollno=rollno;
+		}
+	
+		public String getName()
+		{
+			return name;
+		}
+     public void setName(String name)
+     {
+    	 this.name=name;
+     }
+     
 }
